@@ -2,7 +2,6 @@ class Onebrain < Formula
   desc "Local-first Rust CLI for OneBrain — personal AI OS for Obsidian"
   homepage "https://onebrain.run"
   license "AGPL-3.0-only"
-  version "3.0.0"
 
   on_macos do
     on_arm do
