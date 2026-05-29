@@ -27,6 +27,7 @@ class Onebrain < Formula
 
   def install
     bin.install "onebrain"
+    generate_completions_from_executable(bin/"onebrain", "completions")
   end
 
   test do
