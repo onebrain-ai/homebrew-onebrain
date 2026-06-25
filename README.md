@@ -50,4 +50,4 @@ The Formula's `sha256` fields verify each downloaded archive matches the publish
 
 ## License
 
-This tap is published under the same license as the upstream CLI: [AGPL-3.0-only](https://github.com/onebrain-ai/onebrain-cli/blob/main/LICENSE).
+This tap is published under the same license as the upstream CLI: [MIT](https://github.com/onebrain-ai/onebrain-cli/blob/main/LICENSE-MIT) OR [Apache-2.0](https://github.com/onebrain-ai/onebrain-cli/blob/main/LICENSE-APACHE), at your option.
