@@ -1,3 +1,10 @@
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
+    <img alt="OneBrain Homebrew tap — Your AI Thinking Partner" src="assets/banner-light.svg" width="640">
+  </picture>
+</p>
+
 # Homebrew tap for OneBrain CLI
 
 Homebrew tap for [onebrain-ai/onebrain-cli](https://github.com/onebrain-ai/onebrain-cli) — the local-first Rust binary that powers the OneBrain personal AI OS for Obsidian.
