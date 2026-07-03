@@ -1,0 +1,30 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  formula:
+    name: brew style + audit
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      # Style + audit run through the tapped formula NAME (not the file path)
+      # so Homebrew's formula-specific RuboCop config applies — a path-based
+      # `brew style Formula/onebrain.rb` uses the default config and reports
+      # false offenses (FrozenStringLiteral / Documentation) Homebrew disables
+      # for formulae.
+      - name: Lint + audit the formula
+        run: |
+          brew tap onebrain-ai/onebrain "$GITHUB_WORKSPACE"
+          brew style onebrain-ai/onebrain/onebrain
+          brew audit --strict onebrain-ai/onebrain/onebrain
