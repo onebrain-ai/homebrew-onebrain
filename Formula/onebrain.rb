@@ -5,23 +5,23 @@ class Onebrain < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/onebrain-ai/onebrain-cli/releases/download/v3.4.25/onebrain-aarch64-apple-darwin.tar.gz"
-      sha256 "22972ee356fe2900f474cf2fb03647b744559ba9d47797091c1d318e10614a97"
+      url "https://github.com/onebrain-ai/onebrain-cli/releases/download/v3.5.0/onebrain-aarch64-apple-darwin.tar.gz"
+      sha256 "4a5b8ede0926e139904acd48ee34ede008c62f857119fe5916dfab7a385b2692"
     end
     on_intel do
-      url "https://github.com/onebrain-ai/onebrain-cli/releases/download/v3.4.25/onebrain-x86_64-apple-darwin.tar.gz"
-      sha256 "612aa401e88bae0fc3f59a22b4954297685bcbb25b1cc2f74d0388d8759ad0c1"
+      url "https://github.com/onebrain-ai/onebrain-cli/releases/download/v3.5.0/onebrain-x86_64-apple-darwin.tar.gz"
+      sha256 "5bcdeab82d025b3ab783e08e7a19f374a9120754cafadace31517173eec2fb9c"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/onebrain-ai/onebrain-cli/releases/download/v3.4.25/onebrain-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "106bbc0b458758e382ab55070fd09b03c3e0b9d507328f4d66a8cbe0c8f3bd09"
+      url "https://github.com/onebrain-ai/onebrain-cli/releases/download/v3.5.0/onebrain-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "5194258c5fb4d16e0774bf4942a70bf7c3f2dbf154ec560b6a8a32f77c182ac0"
     end
     on_intel do
-      url "https://github.com/onebrain-ai/onebrain-cli/releases/download/v3.4.25/onebrain-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "13713305f8f8f9c808f20d41ad2219b5dc2bd5298865cdb1577cb3bba8e9e29c"
+      url "https://github.com/onebrain-ai/onebrain-cli/releases/download/v3.5.0/onebrain-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "7d2e5a3df54e16ca87e37b7f3c74e263e4ec8042c7aa8601a471b39960d5bc8a"
     end
   end
 
